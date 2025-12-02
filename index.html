@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mirocrush — Simple Page</title>
+  <style>
+    :root { --accent: #0366d6; --max-w: 720px; }
+    body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif; margin: 0; padding: 2.5rem 1rem; color: #111; line-height: 1.6; }
+    .container { max-width: var(--max-w); margin: 0 auto; }
+    header { text-align: center; margin-bottom: 2rem; }
+    h1 { margin: 0 0 .25rem 0; font-size: 1.75rem; }
+    p.lead { margin: .25rem 0 1rem 0; color: #444; }
+    a.button { display: inline-block; background: var(--accent); color: #fff; padding: .5rem 1rem; border-radius: 6px; text-decoration: none; }
+    main { background: #fff; padding: 1.25rem; border-radius: 8px; box-shadow: 0 1px 2px rgba(0,0,0,.04); }
+    footer { margin-top: 1.5rem; text-align: center; color: #666; font-size: .9rem; }
+    code { background: #f6f8fa; padding: .125rem .25rem; border-radius: 4px; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, "Roboto Mono", monospace; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Mirocrush</h1>
+      <p class="lead">A minimal starter HTML file for your project.</p>
+      <a class="button" href="README.md">Open README</a>
+    </header>
+    <main>
+      <section>
+        <h2>About</h2>
+        <p>This page is intentionally simple. Edit <code>index.html</code> to start building your site.</p>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; <span id="year">2025</span> Mirocrush</p>
+    </footer>
+  </div>
+  <script>
+    // Update the year dynamically
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
